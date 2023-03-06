@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-xs-10">
+      <app-secondary-edit></app-secondary-edit>
+      <hr>
+      <ul class="list-group">
+        <a
+          class="list-group-item"
+          style="cursor: pointer"
+          *ngFor="let secondaryItem of secondaryItems; let i = index"
+          (click)="onEditItem(i)"
+        >
+          {{ secondaryItem.name }} ({{ secondaryItem.amount }})
+        </a>
+      </ul>
+    </div>
+  </div>
+  

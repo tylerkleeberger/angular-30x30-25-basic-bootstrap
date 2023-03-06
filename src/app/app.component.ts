@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-30x30-25-basic-bootstrap';
+  loadedFeature = 'primary';
+
+  onNavigate(feature: string) {
+    this.loadedFeature = feature;
+  }
 }
